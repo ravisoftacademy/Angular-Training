@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StringInterpolationComponent implements OnInit {
 
-  myName:string="Ravi Software Academy";
+  myName:string="Ravi Software";
   
   constructor() { }
 

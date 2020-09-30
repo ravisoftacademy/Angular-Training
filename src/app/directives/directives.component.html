@@ -1,0 +1,8 @@
+
+<button type="button" class="btn btn-primary" (click)="onSwithpressed()">{{swithLabel}} </button>
+
+<img src="https://www.lightbulbs.com/catalog/product_line_photos/light_bulbs_beauty.jpg?123456" alt="Girl in a jacket" width="50" height="60" *ngIf="switchstate; else glowbulb">
+
+<ng-template #glowbulb>
+<img src="https://images-na.ssl-images-amazon.com/images/I/5142MoAjNOL._AC_SL1500_.jpg" alt="Girl in a jacket" width="50" height="60" >
+</ng-template>
