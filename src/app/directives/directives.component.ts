@@ -9,12 +9,18 @@ export class DirectivesComponent implements OnInit {
 
   swithLabel:string="OFF"
   switchstate:boolean;
+  fruit:string;
+  
+  Fruits:string[]=[];
 
   constructor() { }
 
   ngOnInit() {
   }
 
+AddFruittoarray(){
+this.Fruits.push(this.fruit);
+}
 onSwithpressed(){
   this.switchstate=!this.switchstate;
 
