@@ -9,10 +9,12 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { TestService } from './test.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, StringInterpolationComponent, EventBindingComponent, PropertyBindingComponent, TwoWayDatabindingComponent, DirectivesComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [TestService]
 })
 export class AppModule { }

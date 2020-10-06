@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TestService} from '../test.service';
 
 @Component({
   selector: 'app-directives',
@@ -10,6 +11,7 @@ export class DirectivesComponent implements OnInit {
   swithLabel:string="OFF"
   switchstate:boolean;
   fruit:string;
+  testservice = new TestService;
   
   Fruits:string[]=[];
 
@@ -20,6 +22,7 @@ export class DirectivesComponent implements OnInit {
 
 AddFruittoarray(){
 this.Fruits.push(this.fruit);
+this.testservice.getTestString(this.fruit);
 }
 onSwithpressed(){
   this.switchstate=!this.switchstate;
@@ -28,7 +31,6 @@ onSwithpressed(){
     this.swithLabel="ON";
   else
     this.swithLabel="OFF";
-
 }
 }
 
